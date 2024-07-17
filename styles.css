@@ -1,0 +1,247 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background: #fff;
+    overflow: hidden;
+  }
+  
+  :root {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  
+  a {
+    font-weight: 400;
+    text-decoration: inherit;
+    color: #10a37f;
+  }
+  
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+  }
+  
+  .oai-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .oai-header img {
+    display: flex;
+    height: 64px;
+    width: 64px;
+    background-color: #fff;
+    padding: 64px 0 0;
+    fill: #202123;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title-wrapper {
+    padding: 40px 40px 24px;
+    box-sizing: content-box;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-family: "Söhne";
+    margin: 24px 0 0;
+    color: #2d333a;
+    width: 320px;
+    text-align: center;
+  }
+  
+  .login-container {
+    background-color: #fff;
+    padding: 0 40px 40px;
+    border-radius: 3px;
+    box-shadow: none;
+    width: 320px;
+    box-sizing: content-box;
+    flex-shrink: 0;
+  }
+  
+  .input-wrapper {
+    position: relative;
+    margin-bottom: 25px;
+    width: 320px;
+    box-sizing: content-box;
+  }
+  
+  .email-input {
+    width: 100%;
+    height: 52px;
+    background-color: #fff;
+    color: #2d333a;
+    border: 1px solid #c2c8d0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 0 16px;
+    transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    margin: 0;
+    appearance: none;
+  }
+  
+  .email-input:focus,
+  .email-input:valid {
+    border: 1px solid #10a37f;
+    outline: none;
+  }
+  
+  .email-input:focus-within {
+    box-shadow: 0 0 0 1px #10a37f;
+  }
+  
+  .email-label {
+    position: absolute;
+    top: 26px;
+    left: 16px;
+    background-color: #fff;
+    color: #6f7780;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    pointer-events: none;
+    padding: 1px 6px;
+    transform: translateY(-50%);
+    transform-origin: 0;
+    transition: transform 0.15s ease-in-out, top 0.15s ease-in-out, padding 0.15s ease-in-out;
+    z-index: 1;
+  }
+  
+  .email-input:focus+.email-label,
+  .email-input:valid+.email-label {
+    font-size: 14px;
+    top: 0;
+    left: 10px;
+    color: #10a37f;
+    background-color: #fff;
+  }
+  
+  .continue-btn {
+    position: relative;
+    height: 52px;
+    width: 320px;
+    background-color: #10a37f;
+    color: #fff;
+    margin: 24px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 4px 16px;
+    font: inherit;
+    border-width: 0px;
+    cursor: pointer;
+  }
+  
+  .other-page {
+    width: 320px;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  
+  .other-page-link {
+    padding: 4px;
+  }
+  
+  .divider-wrapper {
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    border: none;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+    padding: 24px 0 0;
+    align-items: center;
+    justify-content: center;
+    vertical-align: baseline;
+  }
+  
+  .divider-wrapper:before,
+  .divider-wrapper:after {
+    content: "";
+    border-bottom: 1px solid #c2c8d0;
+    flex: 1 0 auto;
+    height: 0.5em;
+    margin: 0;
+  }
+  
+  .divider {
+    text-align: center;
+    flex: 0.2 0 auto;
+    margin: 0;
+    height: 12px;
+  }
+  
+  .social-section {
+    margin-top: 24px;
+  }
+  
+  .social-btn {
+    position: relative;
+    width: 320px;
+    border: 1px solid #c2c8d0;
+    border-radius: 6px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    height: 52px;
+    transition: box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    padding: 0 8px 0 52px;
+    color: #2d333a;
+    margin-bottom: 8px;
+    outline: 0;
+  }
+  
+  .social-logo-wrapper {
+    position: absolute;
+    left: 26px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .social-logo {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+  
+  .social-text {
+    text-align: left;
+    position: relative;
+  }
+  
+  .oai-footer {
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6e6e80;
+    padding: 12px 0 24px;
+    flex: 0 0 auto;
+  }
+  
+  .separator:before {
+    content: " | ";
+    margin: 0 8px;
+  }
+  
